@@ -1,0 +1,9 @@
+//Imports
+@import "./base/colors", "./base/reset", "./base/typography";
+@import "./utils/functions", "./utils/mixins";
+@import "./layout/grid", "./layout/header", "./layout/mainsection", "./layout/apisection", "./layout/statistics", "./layout/footer", "./layout/startnow", "./layout/attribution";
+
+body {
+  color: get-color(very-dark-blue-color);
+}
+

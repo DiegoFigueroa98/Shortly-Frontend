@@ -1,0 +1,66 @@
+.start-now-section-wrapper {
+  grid-column: 1/-1;
+
+  .start-now {
+    grid-column: 1/-1;
+    background: get-color(dark-violet-color) url(/images/bg-boost-desktop.svg);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 5em 0.9em;
+
+    .started-btn {
+      @include round-button(1.75em);
+      padding: 0.7rem 2rem;
+      font-weight: get-weight(bold);
+      font-size: 1em;
+    }
+
+    .title {
+        font-size: 1.5em;
+        margin-bottom: 0.7em;
+        font-weight: get-weight(bold);
+        text-align: center;
+        color: white;
+      }
+  }
+}
+
+@include desktop {
+  .start-now-section-wrapper {
+    margin-top: 0em;
+  
+    .start-now {
+      grid-column: 1/-1;
+      background: get-color(dark-violet-color) url(/images/bg-boost-desktop.svg);
+      background-size: cover;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 4em 0.9em;
+  
+      .started-btn {
+        @include round-button(1.75em);
+        padding: 0.7rem 2rem;
+        font-weight: get-weight(bold);
+        font-size: 1.25em;
+
+        &:hover {
+          background: get-color(slightly-cyan-color);
+          border-color: get-color(slightly-cyan-color);
+        }
+      }
+  
+      .title {
+          font-size: 2.5em;
+          margin-bottom: 0.7em;
+          font-weight: get-weight(bold);
+          text-align: center;
+          color: white;
+        }
+    }
+  }
+}

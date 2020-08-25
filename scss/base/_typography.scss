@@ -1,0 +1,14 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:500,600,700,800&display=swap");
+
+$font-stack: "Poppins", sans-serif;
+
+$font-weights: (
+  "light" : 500,
+  "medium": 600,
+  "bold"  : 700,
+  "bolder": 800,
+);
+
+* {
+  font-family: $font-stack;
+}

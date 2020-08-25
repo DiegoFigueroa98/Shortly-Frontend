@@ -1,0 +1,12 @@
+.main-wrapper {
+  display: grid;
+  grid-template-columns: 1.3em 1fr 1.3em;
+  grid-template-rows: auto;
+}
+
+@include desktop {
+  .main-wrapper {
+    display: grid;
+    grid-template-columns: minmax(1.3em, 10em) 1fr minmax(1.3em, 10em);
+  }
+}

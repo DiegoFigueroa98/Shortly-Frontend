@@ -1,0 +1,14 @@
+.attribution {
+  grid-column: 1/-1;
+  background: get-color(very-dark-violet-color);
+  font-size: 0.6em;
+  text-align: center;
+  padding-top: 0.6em;
+  padding-bottom: 0.6em;
+  color: get-color(white-color);
+
+  a {
+    color: get-color(white-color);
+    text-decoration: underline;
+  }
+}

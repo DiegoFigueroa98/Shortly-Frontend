@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <link rel="stylesheet" href="css/main.css">
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.13.0/css/all.css"
+    integrity="sha384-Bfad6CLCknfcloXFOyFnlgtENryhrpZCe29RTifKEixXQZ38WheV+i/6YWSzkz3V" crossorigin="anonymous">
+
+  <title>Frontend Mentor | Shortly URL shortening API Challenge</title>
+
+</head>
+
+<body>
+  <main class="main-wrapper">
+    <!-- Header -->
+    <header class="header-wrapper">
+      <!-- Navigation -->
+      <nav class="nav-wrapper">
+        <!-- Logo and Hamburger Icon -->
+        <img class="shortly-logo" src="/images/logo.svg" alt="shortly-logo">
+        <div class="hamburger-icon-wrapper">
+          <i class="fa fa-bars"></i>
+        </div>
+        <!-- Desktop Navbar -->
+        <div class="navbar-desktop-wrapper">
+          <ul class="left-nav">
+            <li><a href="#" class="navbar-item">Features</a></li>
+            <li><a href="#" class="navbar-item">Pricing</a></li>
+            <li><a href="#" class="navbar-item">Resources</a></li>
+          </ul>
+          <ul class="right-nav">
+            <li><a href="#" class="navbar-item">Login</a></li>
+            <li><a href="#" class="login-btn"> Sign Up </a></li>
+          </ul>
+        </div>
+      </nav>
+
+      <!-- Hamburger navigation -->
+      <div class="nav-hamburger-wrapper nav-hidden">
+        <ul class="nav-hamburger">
+          <li class="nav-h-item"><a href="#">Features</a></li>
+          <li class="nav-h-item"><a href="#">Pricing</a></li>
+          <li class="nav-h-item"><a href="#">Resources</a></li>
+          <hr class="nav-line">
+          <li class="nav-h-item"><a href="#">Login</a></li>
+          <li class="nav-h-item"><a class="signup-btn" href="#">Sign Up</a></li>
+        </ul>
+      </div>
+    </header>
+
+    <!-- Main Section -->
+    <section class="main-section-wrapper">
+      <div class="main-section-image"></div>
+      <article class="main-section-information">
+        <h1 class="title">
+          More than just shorter links
+        </h1>
+        <p class="info">Build your brand’s recognition and get detailed insights
+          on how your links are performing.</p>
+        <a href="#" class="stared-btn"> Get Started</a>
+      </article>
+    </section>
+
+    <!-- Api Section -->
+    <section class="api-section-wrapper">
+      <form class="form" action="">
+        <input class="input" type="text" placeholder="Shorten a link here...">
+        <p class="notification"> </p>
+        <button class="form-btn"> Shorten It!</button>
+      </form>
+      <div class="form-url-wrapper">
+
+      </div>
+    </section>
+
+    <!-- Statistics -->
+    <section class="statistics-section-wrapper">
+      <div class="statistics">
+        <div class="content">
+          <h1 class="title">Advanced Statistics</h1>
+          <p class="description">
+            Track how your links are performing across the web with <br />our advanced statistics
+            dashboard.
+          </p>
+
+          <div class="cards">
+            <div class="card">
+              <div class="card-icon">
+                <img src="/images/icon-brand-recognition.svg" alt="" role="presentation" />
+              </div>
+              <div class="card-title">Brand Recognition</div>
+              <div class="card-body">
+                Boost your brand recognition with each click. Generic links don’t mean a thing.
+                Branded links help instil confidence in your content.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="/images/icon-detailed-records.svg" alt="" role="presentation" />
+              </div>
+              <div class="card-title">Detailed Records</div>
+              <div class="card-body">
+                Gain insights into who is clicking your links. Knowing when and where people engage
+                with your content helps inform better decisions.
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-icon">
+                <img src="/images/icon-fully-customizable.svg" alt="" role="presentation" />
+              </div>
+              <div class="card-title">Fully Customizable</div>
+              <div class="card-body">
+                Improve brand awareness and content discoverability through customizable links,
+                supercharging audience engagement.
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Start Now -->
+    <section class="start-now-section-wrapper">
+      <div class="start-now">
+        <h1 class="title">Boost your links today</h1>
+        <button class="started-btn">Get Started</button>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer-wrapper">
+      <div class="footer">
+        <div class="content">
+          <img class="logo-footer" src="/images/logo.svg" alt="" srcset="">
+          <div class="company-links">
+            <div class="group">
+              <h5 class="title">Features</h5>
+              <div class="links">
+                <a href="">Link Shortening</a>
+                <a href="">Branded Links</a>
+                <a href="">Analytics</a>
+              </div>
+            </div>
+            <div class="group">
+              <h5 class="title">Resources</h5>
+              <div class="links">
+                <a href="">Blog</a>
+                <a href="">Developers</a>
+                <a href="">Support</a>
+              </div>
+            </div>
+            <div class="group">
+              <h5 class="title">Company</h5>
+              <div class="links">
+                <a href="#">About</a>
+                <a href="#">Our Team</a>
+                <a href="#">Careers</a>
+                <a href="#">Contact</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#">
+              <img src="/images/icon-facebook.svg" alt="Facebook-page" />
+            </a>
+            <a href="#">
+              <img src="/images/icon-twitter.svg" alt="Twitter-page" />
+            </a>
+            <a href="#">
+              <img src="/images/icon-pinterest.svg" alt="Pinterest-page" />
+            </a>
+            <a href="#">
+              <img src="/images/icon-instagram.svg" alt="Instagram-page" />
+            </a>
+          </div>
+        </div>
+      </div>
+      </div>
+    </footer>
+
+    <!-- Attribution -->
+    <div class="attribution">
+      Challenge by
+      <a href="https://vigorous-cori-46a9d9.netlify.app/" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="https://github.com/DiegoFigueroa98">Diego Figueroa</a>.
+    </div>
+  </main>
+
+  <script src="/js/app.js"></script>
+</body>
+
+</html>

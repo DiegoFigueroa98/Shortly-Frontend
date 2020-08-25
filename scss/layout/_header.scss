@@ -1,0 +1,122 @@
+.header-wrapper {
+  display: flex;
+  align-items: flex-end;
+  height: 4.5em;
+  grid-column: 2/3;
+}
+
+.nav-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+
+  .hamburger-icon-wrapper {
+    color: get-color(grayish-violet-color);
+    font-size: 1.6rem;
+  }
+}
+
+.nav-hamburger-wrapper {
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 2;
+  display: none;
+
+  .nav-hamburger {
+    background: get-color(dark-violet-color);
+    border-radius: 8px;
+    padding: 2rem;
+    position: absolute;
+    text-align: center;
+    top: 13%;
+    right: 1.3em;
+    left: 1.3em;
+    width: calc(100% - 2.6rem);
+
+    .nav-line {
+      background-color: get-color(gray-color);
+      opacity: 0.1;
+      margin: 1rem 0rem;
+    }
+
+    .nav-h-item {
+      padding: 0.7rem 0rem;
+      margin-bottom: 1rem;
+
+      a {
+        color: get-color(white-color);
+        font-weight: get-weight(bold);
+      }
+
+      .signup-btn {
+        @include round-button(1.75em);
+        padding: 0.5rem 5rem;
+      }
+    }
+  }
+}
+
+.nav-show {
+  display: block;
+}
+
+.navbar-desktop-wrapper {
+  display: none;
+}
+
+@include desktop {
+  .header-wrapper{
+    height: 6em;
+  }
+
+  .navbar-desktop-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+
+    .left-nav,
+    .right-nav {
+      list-style-type: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0em;
+
+      li {
+        margin: 1rem;
+      }
+
+      .navbar-item {
+        text-decoration: none;
+        color: get-color(grayish-violet-color);
+        font-weight: get-weight(bold);
+        font-size: 1em;
+        outline: none;
+
+        &:hover {
+          color: get-color(very-dark-violet-color);
+        }
+      }
+    }
+  }
+
+  .login-btn {
+    @include round-button(1.75em);
+    cursor: pointer;
+    padding: 0.55em 1.4em;
+    font-weight: get-weight(bold);
+    min-width: 6.25em;
+    max-height: 2.5em;
+
+    &:hover {
+      opacity: 0.6;
+    }
+  }
+
+  .hamburger-icon-wrapper {
+    display: none;
+  }
+}

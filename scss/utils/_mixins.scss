@@ -1,0 +1,19 @@
+@mixin desktop {
+  @media (min-width: 1440px) {
+    @content;
+  }
+}
+
+@mixin round-button($border-radius) {
+  background-color: get-color(cyan-color);
+  border-radius: $border-radius;
+  border: 1px solid get-color(cyan-color);
+  color: get-color(white-color);
+  font-weight: get-weight(bold);
+}
+
+@mixin flex-row-center {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}

@@ -1,0 +1,257 @@
+.api-section-wrapper {
+  position: relative;
+  background: get-color(slightly-gray-color);
+  grid-column: 1/-1;
+  padding: 5em 0em 4em 0em;
+
+  .form {
+    display: flex;
+    flex-direction: column;
+    background: get-color(dark-violet-color);
+    background-image: url("/images/bg-shorten-desktop.svg");
+    background-position: right;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+    position: absolute;
+    top: -75px;
+    width: calc(100% - 2.6em);
+    padding: 1.2em;
+    margin-left: 1.3em;
+
+    .input {
+      border-radius: 0.3em;
+      border: 1px solid get-color(grayish-violet-color);
+      color: get-color(dark-violet-color);
+      font-weight: get-weight(light);
+      margin-bottom: 0em;
+      padding: 0.7em 0.7em;
+      font-size: 1em;
+    }
+
+    .form-btn {
+      @include round-button(0.3em);
+      margin-top: 0.8em;
+      padding: 0.7em 0em;
+      font-size: 1em;
+    }
+  }
+
+  ::placeholder {
+    color: get-color(gray-color);
+  }
+
+  .notification {
+    margin: 0em;
+    padding: 0.3em 0em 0em 0em;
+    font-size: 0.75em;
+    font-style: italic;
+  }
+
+  .errorInput {
+    border: 2px solid get-color(red-color) !important;
+    color: get-color(slightly-red-color) !important;
+
+    &::placeholder {
+      color: get-color(slightly-red-color) !important;
+    }
+  }
+
+  .successInput {
+    border: 1px solid get-color(green-color);
+  }
+  .success {
+    color: get-color(green-color);
+  }
+
+  .error {
+    color: get-color(red-color);
+  }
+
+  .form-url-wrapper {
+    width: 100%;
+
+    .form-url-item {
+      background-color: get-color(white-color);
+      border-radius: 0.3em;
+      margin: 0.1em 1.3em 0em 1.3em;
+      padding: 0.9em 1em 0.5em 0.9em;
+      border-top: 0.1em;
+
+      &:first-of-type {
+        margin-top: 1.5em;
+      }
+
+      &:nth-child(1n) {
+        border-radius: 0.1em 0.3em 0.1em 0.3em;
+      }
+
+      &:nth-child(2n) {
+        margin-bottom: 1.5em;
+        border-radius: 0.3em 0.1em 0.3em 0.1em;
+        padding-bottom: 0.9em;
+      }
+
+      .form-url {
+        @include flex-row-center();
+        flex-direction: column;
+        width: 100%;
+      }
+
+      h5 {
+        color: get-color(very-dark-blue-color);
+        font-size: 0.9em;
+        font-weight: get-weight(medium);
+        white-space: nowrap;
+        overflow: hidden;
+        width: 100%;
+      }
+
+      a {
+        color: get-color(cyan-color);
+        font-size: 0.9em;
+        font-weight: get-weight(medium);
+        white-space: nowrap;
+        overflow: hidden;
+        margin-bottom: 1em;
+        width: 100%;
+      }
+
+      button {
+        @include round-button(0.4em);
+        padding: 0.7em 0em;
+        font-size: 0.9em;
+        width: 100%;
+        margin-left: 0em;
+      }
+    }
+  }
+
+  .button-copied {
+    background-color: get-color(dark-violet-color);
+    border: 1px solid get-color(dark-violet-color);
+  }
+}
+
+@include desktop {
+  .api-section-wrapper {
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-columns: inherit;
+    padding: 5em 0em 4em 0em;
+
+    .form {
+      grid-column: 2/3;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      width: 100%;
+      padding: 4em;
+      margin: 0em;
+      top: -88px;
+      border-radius: 0.5em;
+
+      .input {
+        width: 80.8%;
+        order: 1;
+        font-weight: get-weight(light);
+        margin-bottom: 0em;
+        padding: 0.7em 1.5em;
+        font-size: 1.3em;
+        border-radius: 0.4em;
+      }
+
+      .form-btn {
+        width: 17%;
+        order: 2;
+        font-size: 1.2em;
+        font-weight: get-weight(bold);
+        margin: 0em;
+        border-radius: 0.4em;
+
+        &:hover {
+          background: get-color(slightly-cyan-color);
+          border-color: get-color(slightly-cyan-color);
+        }
+      }
+
+      .notification {
+        order: 3;
+        font-size: 1em;
+        width: 30%;
+      }
+    }
+
+    .form-url-wrapper {
+      @include flex-row-center();
+      flex-wrap: wrap;
+      grid-column: 2/3;
+      width: 100%;
+      height: auto;
+      margin-top: 3.5em;
+
+      .form-url-item {
+        @include flex-row-center();
+        margin: 0em;
+        padding: 0.9em 1em 0.5em 0.9em;
+        width: 50%;
+        height: 5em;
+
+        &:first-of-type {
+          margin: 0em;
+        }
+
+        &:nth-child(1n) {
+          border-radius: 0.4em;
+          margin: 0em 0em 1.3em 0em;
+          padding: 0em 2.5em;
+          width: 60%;
+        }
+
+        &:nth-child(2n) {
+          border-radius: 0.4em;
+          margin: 0em 0em 1.3em 0em;
+          padding: 0em 1.5em;
+          width: 40%;
+        }
+
+        h5 {
+          font-size: 1.3em;
+          font-weight: get-weight(light);
+          width: 100%;
+        }
+
+        .form-url {
+          width: 100%;
+          @include flex-row-center();
+          justify-content: space-between;
+        }
+
+        a {
+          font-size: 1.3em;
+          font-weight: get-weight(light);
+          margin: 0em;
+          width: 71%;
+          text-align: right;
+        }
+
+        .button-copy {
+          font-size: 1em;
+          width: 23%;
+          padding: 0.5em 0em;
+          font-weight: get-weight(medium);
+
+          &.button-copied {
+            background: get-color(dark-violet-color);
+            border: 1px solid get-color(dark-violet-color);
+          }
+
+          &:hover {
+            background: get-color(slightly-cyan-color);
+            border-color: get-color(slightly-cyan-color);
+          }
+        }
+      }
+    }
+  }
+}
